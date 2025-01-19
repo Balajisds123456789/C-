@@ -1,0 +1,28 @@
+#include<iostream>
+using namespace std;
+
+int main(){
+
+//enter a array;
+int n;
+cout<<"enter size of array: "<<endl;
+cin>>n;
+int	arr[n];
+
+for(int i=0;i<n;i++){
+	cout<<"enter element"<< i << endl;
+	cin>>arr[i];
+	}
+
+int sum = 0;
+
+for(int j = 0;j<n;j++){
+	sum = arr[j] + sum;
+	}
+
+cout<<"sum of elements = "<< sum << endl;
+
+return 0;
+
+}
+
